@@ -20,7 +20,7 @@ dpkg -i pam-ssh-agent-auth_0.10.3-1_amd64.deb
 
 First make sure you have a 2nd shell open as root in case of trouble.
 
-Add the following line to /etc/sudoers: (using visudo)<br>
+Add the following line to /etc/sudoers using `visudo`:<br>
 <pre>
   Defaults        env_keep += "SSH_AUTH_SOCK"
 </pre>
