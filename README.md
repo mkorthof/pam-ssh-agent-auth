@@ -5,7 +5,7 @@
 * https://github.com/jbeverly/pam_ssh_agent_auth
 * https://sourceforge.net/projects/pamsshagentauth/files/pam_ssh_agent_auth
 
-## In case the steps below are too much trouble for you (and you trust me... ;) just execute the oneliner below to install the package:
+### In case the steps below are too much trouble for you (and you trust me... ;) just execute the oneliner below to install the package:
 
 pam_ssh_agent_auth-0.10.3 (pam-ssh-agent-auth_0.10.3-1_amd64.deb)
 <pre>
