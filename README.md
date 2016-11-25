@@ -15,7 +15,7 @@ grep 67f4b87f5ac840deb0c6d38c7812221dbf6d74fb14252100a3fc67d76645ae4b79599bc8dee
 dpkg -i pam-ssh-agent-auth_0.10.3-1_amd64.deb
 </pre>
 <sub>(copy/paste as one line)</sub>
-<br><br>
+<br>
 
 ## Configuration:
 
