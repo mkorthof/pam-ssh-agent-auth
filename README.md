@@ -29,7 +29,6 @@ And add this line to top of /etc/pam.d/sudo, under `"#%PAM-1.0"`:<br>
 <pre>
   auth [success=2 default=ignore] pam_ssh_agent_auth.so file=/home/&lt;username&gt;/.ssh/authorized_keys allow_user_owned_authorized_keys_file authorized_keys_user=&lt;username&gt;
 </pre>
-<br>
 <sub>(replacing \<username> with your own)</sub>
 <br>
 
