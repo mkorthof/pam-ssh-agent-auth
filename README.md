@@ -11,24 +11,26 @@ pam_ssh_agent_auth-0.10.3 (pam-ssh-agent-auth_0.10.3-1_amd64.deb)
 <pre>
 $ wget https://github.com/mkorthof/pam-ssh-agent-auth/raw/master/pam-ssh-agent-auth_0.10.3-1_amd64.deb && sha512sum pam-ssh-agent-auth_0.10.3-1_amd64.deb | \
 grep 67f4b87f5ac840deb0c6d38c7812221dbf6d74fb14252100a3fc67d76645ae4b79599bc8dee440c91b910c4d1e612fe988e5c151e8b4830c1b5058fbc87c8043 && \
-dpkg -i sha512sum pam-ssh-agent-auth_0.10.3-1_amd64.deb
+dpkg -i pam-ssh-agent-auth_0.10.3-1_amd64.deb
 </pre>
 <sub>(copy/paste as one line)</sub>
 <br><br>
 
 ## Configuration:
 
-Add the following line to /etc/sudoers: (using visudo)<br>
+First make sure you have a 2nd shell open as root in case of trouble.
+
+Add the following line to /etc/sudoers using `visudo`:<br>
 <pre>
   Defaults        env_keep += "SSH_AUTH_SOCK"
 </pre>
 
 And add this line to top of /etc/pam.d/sudo, under `"#%PAM-1.0"`:<br>
 <pre>
-  auth [success=2 default=ignore] pam_ssh_agent_auth.so file=/home/<username>/.ssh/authorized_keys allow_user_owned_authorized_keys_file authorized_keys_user=<username>
+  auth [success=2 default=ignore] pam_ssh_agent_auth.so file=/home/&lt;username&gt;/.ssh/authorized_keys allow_user_owned_authorized_keys_file authorized_keys_user=&lt;username&gt;
 </pre>
 <br>
-<sub>(replacing `<username>` with your own):</sub>
+<sub>(replacing \<username> with your own)</sub>
 <br>
 
 Or use `man pam_ssh_agent_auth` for more options.
