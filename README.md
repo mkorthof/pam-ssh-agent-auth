@@ -43,7 +43,7 @@ $ git clone or download from SF
 $ cd pam_ssh_agent_auth-x.x.x
 </pre>
 
-2. Run pam_ssh_agent_auth-install.sh, which does the following:
+2. Run `pam_ssh_agent_auth-install.sh`, which does the following:
 <pre>
 $ make distclean && \
 ./configure --libexecdir=/lib/security --with-mantype=man && \
