@@ -35,7 +35,7 @@ And add this line to top of /etc/pam.d/sudo, under `"#%PAM-1.0"`:<br>
 
 Or use `man pam_ssh_agent_auth` for more options.
 
-## To create/install the Debian package youself:
+## Create/install the Debian package yourself:
 
 1. Get the source 
 <pre>
