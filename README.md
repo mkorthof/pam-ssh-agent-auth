@@ -58,7 +58,7 @@ Or use `man pam_ssh_agent_auth` for more options.
 1. Get the original source
 
 ```bash
-$ git clonme https://github.com/jbeverly/pam_ssh_agent_auth.git
+$ git clone https://github.com/jbeverly/pam_ssh_agent_auth.git
 $ cd pam_ssh_agent_auth-x.x.x
 ```
 
