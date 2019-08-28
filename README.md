@@ -10,7 +10,7 @@
 * pam_ssh_agent_auth-0.10.3 (pam-ssh-agent-auth_0.10.3-1_amd64.deb)
 
 <pre>
-$ wget https://github.com/mkorthof/pam-ssh-agent-auth/raw/master/pam-ssh-agent-auth_0.10.3-1_amd64.deb && sha512sum pam-ssh-agent-auth_0.10.3-1_amd64.deb | \
+$ wget https://github.com/mkorthof/pam-ssh-agent-auth/releases/download/0.10.3/pam-ssh-agent-auth_0.10.3-1_amd64.deb && sha512sum pam-ssh-agent-auth_0.10.3-1_amd64.deb | \
 grep 67f4b87f5ac840deb0c6d38c7812221dbf6d74fb14252100a3fc67d76645ae4b79599bc8dee440c91b910c4d1e612fe988e5c151e8b4830c1b5058fbc87c8043 && \
 dpkg -i pam-ssh-agent-auth_0.10.3-1_amd64.deb
 </pre>
